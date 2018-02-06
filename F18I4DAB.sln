@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "F18TurneringsSkakklub", "F18TurneringsSkakklub\F18TurneringsSkakklub.sqlproj", "{9B9AA4CF-4861-472B-9DEE-E0F5F19EE05D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "F18DDDDesign", "F18DDDDesign\F18DDDDesign.csproj", "{7EFF205D-8C7A-4F8E-8002-814461DF851A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B9AA4CF-4861-472B-9DEE-E0F5F19EE05D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B9AA4CF-4861-472B-9DEE-E0F5F19EE05D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B9AA4CF-4861-472B-9DEE-E0F5F19EE05D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9B9AA4CF-4861-472B-9DEE-E0F5F19EE05D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B9AA4CF-4861-472B-9DEE-E0F5F19EE05D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B9AA4CF-4861-472B-9DEE-E0F5F19EE05D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7EFF205D-8C7A-4F8E-8002-814461DF851A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EFF205D-8C7A-4F8E-8002-814461DF851A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EFF205D-8C7A-4F8E-8002-814461DF851A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EFF205D-8C7A-4F8E-8002-814461DF851A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31185519-E697-492A-9573-1DDA27481B7F}
+	EndGlobalSection
+EndGlobal

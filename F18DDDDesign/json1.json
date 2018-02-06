@@ -1,0 +1,39 @@
+﻿{
+  "id": "DKAarhusKatrinebjerg",
+  "Klubnavn": "JRTS Skakklub",
+  "Tilforordnede": [
+    {
+      "TilfordnedesNavn": "Søren",
+      "TurneringsDeltagelse": [ { "TurneringsNavn": "KB2018Forår" } ]
+    },
+    {
+      "TilfordnedesNavn": "Peter",
+      "TurneringsDeltagelse": [ { "TurneringsNavn": "KB2018Forår" } ]
+    },
+    {
+      "TilfordnedesNavn": "Mette",
+      "TurneringsDeltagelse": [ { "TurneringsNavn": "KB2018Forår" } ]
+    }
+
+  ],
+  "Turneringer": [
+    {
+      "TurneringsNavn": "KB2018Forår",
+      "TurneringsStatus": "Afsluttet",
+      "TurneringensTilforordnede": [
+        {
+          "Navn": "Søren",
+          "Klubid": "DKAarhusKatrinebjerg"
+        },
+        {
+          "Navn": "Mette",
+          "Klubid": "DKAarhusKatrinebjerg"
+        },
+        {
+          "Navn": "Peter",
+          "Klubid": "DKAarhusKatrinebjerg"
+        }
+      ]
+    }
+  ]
+}
