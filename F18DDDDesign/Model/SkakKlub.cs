@@ -47,4 +47,7 @@ namespace F18DDDDesign.Model
         public string Klubid { get; set; }
     }
 
+
+   
+
 }

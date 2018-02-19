@@ -1,0 +1,27 @@
+﻿{
+  "firstname": "John",
+  "lastname": "Doe",
+  "dob": "01-01-1960",
+  "hobbies": [
+    {
+      "type": "sports",
+      "description": "soccer"
+    },
+    {
+      "type": "reading",
+      "preferences": [
+        { "type": "scifi" },
+        { "type": "thriller" }
+      ],
+      "authors": [
+        "Olsen",
+        {
+          "Name1":"Benny Andersen",
+          "Namw2" : "Adam Scmidt",
+          "key1": "33",
+          "ke2": "44"
+        }
+      ]
+    }
+  ]
+}

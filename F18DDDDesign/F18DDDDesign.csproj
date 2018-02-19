@@ -43,12 +43,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\SkakKlub.cs" />
+    <Compile Include="Model\Test.cs" />
+    <Compile Include="Model\Test2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="jperson2.json" />
     <None Include="json1.json" />
+    <None Include="json2.json" />
+    <None Include="json3.json" />
+    <None Include="Person.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="XMLFile1.xml" />
+    <Content Include="XMLFile2.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
