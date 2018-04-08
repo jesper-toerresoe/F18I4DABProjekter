@@ -52,12 +52,16 @@ namespace CodeFirstNewDatabase
             }
         }
 
-        public void optimisticLockingClientWins()
+        public void OptimisticLockingClientWins()
         {
             using (var context = new BloggingContext())
             {
                 var blog = context.Blogs.Find(1);
                 blog.Name = "The New ADO.NET Blog Client Wins "+DateTime.Now;
+
+                //Change the db behind the bag of the EF Context. Sents a SQL statement directly til RDBMS 
+                context.Database.ExecuteSqlCommand(
+                           "UPDATE dbo.Blogs SET Name = 'Blu Blu Blu' WHERE BlogId = 1");
 
                 bool saveFailed;
                 do
@@ -80,5 +84,58 @@ namespace CodeFirstNewDatabase
             }
 
         }
+
+        public void OptimisticLockingCustomRecovery()
+        {
+            using (var context = new BloggingContext())
+            {
+                var blog = context.Blogs.Find(1);
+                blog.Name = "The New ADO.NET BlogCustom Recover";
+
+                //Change the db behind the bag of the EF Context. Sents a SQL statement directly til RDBMS 
+                context.Database.ExecuteSqlCommand(
+                           "UPDATE dbo.Blogs SET Name = 'Bli Bli Bli' WHERE BlogId = 1");
+
+                bool saveFailed;
+                do
+                {
+                    saveFailed = false;
+                    try
+                    {
+                        context.SaveChanges();
+                    }
+                    catch (DbUpdateConcurrencyException ex)
+                    {
+                        saveFailed = true;
+
+                        // Get the current entity values and the values in the database 
+                        var entry = ex.Entries.Single();
+                        var currentValues = entry.CurrentValues;
+                        var databaseValues = entry.GetDatabaseValues();
+
+                        // Choose an initial set of resolved values. In this case we 
+                        // make the default be the values currently in the database. 
+                        var resolvedValues = databaseValues.Clone();
+
+                        // Have the user choose what the resolved values should be 
+                        HaveUserResolveConcurrency(currentValues, databaseValues, resolvedValues);
+
+                        // Update the original values with the database values and 
+                        // the current values with whatever the user choose. 
+                        entry.OriginalValues.SetValues(databaseValues);
+                        entry.CurrentValues.SetValues(resolvedValues);
+                    }
+                } while (saveFailed);
+            }
+        }
+        public void HaveUserResolveConcurrency(DbPropertyValues currentValues,
+                                                   DbPropertyValues databaseValues,
+                                                   DbPropertyValues resolvedValues)
+        {
+            // Show the current, database, and resolved values to the user and have 
+            // them edit the resolved values to get the correct resolution. 
+        }
+
+
     }
 }

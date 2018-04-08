@@ -14,14 +14,16 @@ namespace CodeFirstNewDatabase
         static void Main(string[] args)
         {
 
-            //TestEFOptimisticLocking locktest = new TestEFOptimisticLocking();
-            //locktest.OptmisticLockingReload();
-            TestEFLoadings tester = new TestEFLoadings();
+            TestEFOptimisticLocking locktest = new TestEFOptimisticLocking();
+            locktest.OptmisticLockingReload();
+            locktest.OptimisticLockingClientWins();
+            locktest.OptimisticLockingCustomRecovery();
+            //TestEFLoadings tester = new TestEFLoadings();
             //tester.TestEagerlyLoading();
-            tester.TestEagerlyLoadingMultiple();
-            tester.TestExplicitlyLoading();
-            tester.TestLINQStatements();
-            tester.TestEFLazyLoading();
+            //tester.TestEagerlyLoadingMultiple();
+            //tester.TestExplicitlyLoading();
+            //tester.TestLINQStatements();
+            //tester.TestEFLazyLoading();
             using (var db = new BloggingContext())
             {
                
