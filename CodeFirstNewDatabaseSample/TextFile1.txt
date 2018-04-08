@@ -1,0 +1,6 @@
+Severity	Code	Description	Project	File	Line	Suppression State
+Error	CS1929	'bool' does not contain a definition for 'Load' and the best extension method overload 'QueryableExtensions.Load(IQueryable)' requires a receiver of type 'IQueryable'	CodeFirstNewDatabaseSample	C:\Users\jrt\Documents\Visual Studio 2015\Projects\E16I4DAB\CodeFirstNewDatabaseSample\TestEFLoadings.cs	108	Active
+Severity	Code	Description	Project	File	Line	Suppression State
+Error	CS1061	'IQueryable' does not contain a definition for 'Where' and no extension method 'Where' accepting a first argument of type 'IQueryable' could be found (are you missing a using directive or an assembly reference?)	CodeFirstNewDatabaseSample	C:\Users\jrt\Documents\Visual Studio 2015\Projects\E16I4DAB\CodeFirstNewDatabaseSample\TestEFLoadings.cs	116	Active
+The Include path expression must refer to a navigation property defined on the type. Use dotted paths for reference navigation properties and the Select operator for collection navigation properties.
+Parameternavn: path
