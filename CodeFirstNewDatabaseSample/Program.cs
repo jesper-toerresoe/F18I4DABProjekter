@@ -17,7 +17,8 @@ namespace CodeFirstNewDatabase
             TestEFOptimisticLocking locktest = new TestEFOptimisticLocking();
             locktest.OptmisticLockingReload();
             locktest.OptimisticLockingClientWins();
-            locktest.OptimisticLockingCustomRecovery();
+            locktest.OptimisticLockingCustomRecoveryObject();
+            locktest.OptimisticLockingCustomRecoveryEntity();
             //TestEFLoadings tester = new TestEFLoadings();
             //tester.TestEagerlyLoading();
             //tester.TestEagerlyLoadingMultiple();

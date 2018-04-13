@@ -85,12 +85,68 @@ namespace CodeFirstNewDatabase
 
         }
 
-        public void OptimisticLockingCustomRecovery()
+        public void OptimisticLockingCustomRecoveryObject()
         {
             using (var context = new BloggingContext())
             {
                 var blog = context.Blogs.Find(1);
-                blog.Name = "The New ADO.NET BlogCustom Recover";
+                blog.Name = "The New ADO.NET Blog Obj" +DateTime.Now;
+
+                //Change the db behind the bag of the EF Context. Sents a SQL statement directly til RDBMS 
+                context.Database.ExecuteSqlCommand(
+                           "UPDATE dbo.Blogs SET Name = 'Blo Blo Blo' WHERE BlogId = 1");
+
+                bool saveFailed;
+                do
+                {
+                    saveFailed = false;
+                    try
+                    {
+                        context.SaveChanges();
+                    }
+                    catch (DbUpdateConcurrencyException ex)
+                    {
+                        saveFailed = true;
+
+                        // Get the current entity values and the values in the database 
+                        // as instances of the entity type 
+                        var entry = ex.Entries.Single();
+                        var databaseValues = entry.GetDatabaseValues();
+                        var databaseValuesAsBlog = (Blog)databaseValues.ToObject();
+
+                        // Choose an initial set of resolved values. In this case we 
+                        // make the default be the values currently in the database. 
+                        var resolvedValuesAsBlog = (Blog)databaseValues.ToObject();
+
+                        // Have the user choose what the resolved values should be 
+                        HaveUserResolveConcurrencyObject((Blog)entry.Entity,
+                                                   databaseValuesAsBlog,
+                                                   resolvedValuesAsBlog);
+
+                        // Update the original values with the database values and 
+                        // the current values with whatever the user choose. 
+                        entry.OriginalValues.SetValues(databaseValues);
+                        entry.CurrentValues.SetValues(resolvedValuesAsBlog);
+                    }
+
+                } while (saveFailed);
+            }
+
+        }
+        public void HaveUserResolveConcurrencyObject(Blog entity,
+                                                   Blog databaseValues,
+                                                   Blog resolvedValues)
+        {
+            // Show the current, database, and resolved values to the user and have 
+            // them update the resolved values to get the correct resolution. 
+        }
+
+        public void OptimisticLockingCustomRecoveryEntity()
+        {
+            using (var context = new BloggingContext())
+            {
+                var blog = context.Blogs.Find(1);
+                blog.Name = "The New ADO.NET BlogCustom Recover" + DateTime.Now;
 
                 //Change the db behind the bag of the EF Context. Sents a SQL statement directly til RDBMS 
                 context.Database.ExecuteSqlCommand(
