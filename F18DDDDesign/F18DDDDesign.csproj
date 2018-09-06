@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model1\Skakklub.cs" />
+    <Compile Include="Model\Lektor.cs" />
+    <Compile Include="Model\Person.cs" />
+    <Compile Include="Model\PersonJSON.cs" />
     <Compile Include="Model\SkakKlub.cs" />
     <Compile Include="Model\Test.cs" />
     <Compile Include="Model\Test2.cs" />
@@ -51,12 +55,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="jperson2.json" />
-    <None Include="json1.json" />
+    <None Include="Skakklub.json" />
     <None Include="json2.json" />
     <None Include="json3.json" />
+    <None Include="Lektor.json" />
     <None Include="Person.json" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="krav.txt" />
     <Content Include="XMLFile1.xml" />
     <Content Include="XMLFile2.xml" />
   </ItemGroup>

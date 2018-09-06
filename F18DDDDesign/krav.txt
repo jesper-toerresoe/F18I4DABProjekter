@@ -1,0 +1,9 @@
+﻿1. En skakklub arrangerer og afholder skakturneringer
+2. En skakturenring har mindst tre tilforordnede.
+3. En skakklub har mange medlemmer som er tilfordnede.
+4. En tilforordnet skal tilhøre en skakaklub.
+5. Det skal altid være muligt at se en turnerings tilforordnede.
+6. Det skal altid være muligt at se en tilfordnedes arrangementer/turneringer
+7. En tilforordnede kan være medlem af en klub. 
+8. En turnering afholdes af en skakklub.
+9. En tilfordnede skal være tilknyttet mindst en turnering.

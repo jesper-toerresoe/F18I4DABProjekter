@@ -1,0 +1,25 @@
+{
+  "id": "20180827-JRT",
+  "Navn": "Jesper",
+  "Mellemnavn": "Rosholm",
+  "Efternavn": "Tørresø",
+  "Ancinnitet": 12.9,
+  "Fag": [
+    "E18I4DAB/E6DAB",
+    "E18ITSMAP",
+    "E18I7BAC",
+    "E18ST3NVK",
+    "E18ST1PRJ1",
+    "E18ST3PRJ3",
+    "E"
+  ],
+  "Kontor": {
+    "Adresse": {
+      "Vejnavn": "Finlandsgade 22",
+      "Postnummer": "DK 8200",
+      "By": "Aarhus"
+    },
+    "Bygning": "Edison",
+    "Rumnr": "E309"
+  }
+}
