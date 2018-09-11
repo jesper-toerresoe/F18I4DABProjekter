@@ -1,18 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{00472A0F-6ED1-44A2-A68C-69476EB94936}</ProjectGuid>
+    <ProjectGuid>{BF351C2A-32E9-4F84-ACFB-DF957E1C8279}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CodeFirstNewDatabaseSample</RootNamespace>
-    <AssemblyName>CodeFirstNewDatabaseSample</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>MtOMAttribute</RootNamespace>
+    <AssemblyName>MtOMAttribute</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <TargetFrameworkProfile />
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -43,6 +42,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,48 +52,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201809110745276_Initial.cs" />
-    <Compile Include="Migrations\201809110745276_Initial.Designer.cs">
-      <DependentUpon>201809110745276_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809110748289_Homelands.cs" />
-    <Compile Include="Migrations\201809110748289_Homelands.Designer.cs">
-      <DependentUpon>201809110748289_Homelands.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Entity5.cs" />
+    <Compile Include="Entity6.cs" />
+    <Compile Include="Model1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestEFLoadings.cs" />
-    <Compile Include="TestEFOptimisticLocking.cs" />
+    <Compile Include="Rel8.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ClassDiagram1.cd" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="SQLQuery2.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ADONetEFHemtData.htm" />
-    <Content Include="TextFile1.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201809110745276_Initial.resx">
-      <DependentUpon>201809110745276_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809110748289_Homelands.resx">
-      <DependentUpon>201809110748289_Homelands.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

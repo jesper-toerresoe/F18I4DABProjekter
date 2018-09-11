@@ -1,0 +1,24 @@
+{
+  "id": "2018355492038r76",
+  "firstname": "John",
+  "lastname": "Doe",
+  "dob": "01-01-1960",
+  "hobbies": [
+    {
+      "type": "sports",
+      "description": "soccer"
+    },
+    {
+      "type": "reading",
+      "preferences": [
+        { "type": "scifi" },
+        { "type": "thriller" }
+      ]
+    },
+    {
+      "type": "reading",
+      "preferences": null
+    }
+
+  ]
+}

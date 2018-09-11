@@ -15,10 +15,10 @@ namespace CodeFirstNewDatabase
         {
 
             TestEFOptimisticLocking locktest = new TestEFOptimisticLocking();
-            locktest.OptmisticLockingReload();
-            locktest.OptimisticLockingClientWins();
-            locktest.OptimisticLockingCustomRecoveryObject();
-            locktest.OptimisticLockingCustomRecoveryEntity();
+            //locktest.OptmisticLockingReload();
+            //locktest.OptimisticLockingClientWins();
+            //locktest.OptimisticLockingCustomRecoveryObject();
+            //locktest.OptimisticLockingCustomRecoveryEntity();
             //TestEFLoadings tester = new TestEFLoadings();
             //tester.TestEagerlyLoading();
             //tester.TestEagerlyLoadingMultiple();
@@ -95,6 +95,7 @@ namespace CodeFirstNewDatabase
         public int UsersOrgId { get; set;}
         [ForeignKey("UsersOrgId")]
         public Organization UsersOrg { get; set; }
+       
     }
 
     public class Organization
@@ -103,7 +104,7 @@ namespace CodeFirstNewDatabase
         public string OrganizationName { get; set; }        
         public long OrgsCountryId { get; set; }
         [ForeignKey("OrgsCountryId")]
-        public Country OrgsCountry { get; set; }
+        public List<Country> Homelands { get; set; }
     }
 
     public class Country
@@ -111,6 +112,7 @@ namespace CodeFirstNewDatabase
         public long CountryId { get; set; }
         public string CountryName { get; set; }
         public string CountryCode { get; set; }
+        public List<Organization> OrgsInCountry { get; set; }
     }
 
     public class BloggingContext : DbContext

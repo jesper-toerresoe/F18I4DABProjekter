@@ -59,9 +59,9 @@ namespace CodeFirstNewDatabase
                 var users1 = context.Users
                                     .Include("UsersOrg.OrgsCountry")
                                     .ToList();
-                users1 = context.Users
-                        .Include(u => u.UsersOrg.OrgsCountry)
-                        .ToList();
+                //users1 = context.Users
+                //        .Include(u => u.UsersOrg.OrgsCountry)
+                //        .ToList();
                 //users1 = context.Users
                 //        .Include(u => u.UsersOrg.OrgsCountry.CountryName) //Fail with CountryName
                 //        .ToList();

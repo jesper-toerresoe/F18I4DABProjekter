@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Model1\Hobbies.cs" />
     <Compile Include="Model1\Skakklub.cs" />
     <Compile Include="Model\Lektor.cs" />
     <Compile Include="Model\Person.cs" />
@@ -55,6 +57,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="jperson2.json" />
+    <None Include="json1.json" />
     <None Include="Skakklub.json" />
     <None Include="json2.json" />
     <None Include="json3.json" />
