@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MtOMAttribute", "MtOMAttrib
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContextWithCollectionMtN", "..\ContextWithCollectionMtN\ContextWithCollectionMtN.csproj", "{E0DC721C-6B73-4F84-BEC4-982DC0EDC986}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContextWithMtNCollection", "ContextWithMtNCollection\ContextWithMtNCollection.csproj", "{1B3A9B89-4BE3-41F7-AC46-DE75FE834419}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{E0DC721C-6B73-4F84-BEC4-982DC0EDC986}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0DC721C-6B73-4F84-BEC4-982DC0EDC986}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0DC721C-6B73-4F84-BEC4-982DC0EDC986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B3A9B89-4BE3-41F7-AC46-DE75FE834419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B3A9B89-4BE3-41F7-AC46-DE75FE834419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B3A9B89-4BE3-41F7-AC46-DE75FE834419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B3A9B89-4BE3-41F7-AC46-DE75FE834419}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
