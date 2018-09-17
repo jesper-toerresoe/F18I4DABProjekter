@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace F18DDDDesign.Model
+namespace F18DDDDesign.Model4
 {
 
     public class Rootobject1
