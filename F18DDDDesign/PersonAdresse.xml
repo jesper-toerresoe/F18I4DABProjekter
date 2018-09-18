@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Person PersonId="reækghesrkhgure">
+  <Fornavn>Peter</Fornavn>
+  <MellemNavn>Palle</MellemNavn>
+  <Efternavn>Poulsen</Efternavn>
+  <Folkeregisteradresse By="Aarhus N" Postnummer="8200" Vejnavn="Finlandsgade 22"/>
+  <AlternativeAdresse>
+    <AAdresse>
+      <Type>Arbejde</Type>
+      <By>Aarhus N</By>
+      <Postnummer>8200</Postnummer>
+      <Vejnavn>Finlandsgade 22</Vejnavn>
+    </AAdresse>
+    <AAdresse>
+      <Type>Arbejde</Type>
+      <By>Aarhus N</By>
+      <Postnummer>8200</Postnummer>
+      <Vejnavn>Finlandsgade 22</Vejnavn>
+    </AAdresse>
+  </AlternativeAdresse>
+  
+  
+</Person> 

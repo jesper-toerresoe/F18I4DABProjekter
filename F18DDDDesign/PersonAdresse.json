@@ -1,0 +1,35 @@
+{
+  "PersonID": "reækghesrkhgure",
+  "Person": "Peter",
+  "MellemNavn": "Palle",
+  "Efternavn": "Poulsen",
+  "FolkeregisteAdresse": {
+    "Vejnavn": "Finlandsgade 22",
+    "By": {
+      "Bynavn": "Aarhus N",
+      "Postnummer": "8200",
+      "Land": "Danmark"
+    }
+  },
+  "Altenativadresser": [
+    {
+      "Vejnavn": "Finlandsgade 22",
+      "AdresseType": "Arbejde",
+      "By": {
+        "Bynavn": "Aarhus N",
+        "Postnummer": "8200",
+        "Land": "Danmark"
+      }
+    },
+    {
+      "Vejnavn": "Finlandsgade 22",
+      "AdresseType": "Arbejde",
+      "By": {
+        "Bynavn": "Aarhus N",
+        "Postnummer": "8200",
+        "Land": "Danmark"
+      }
+    }
+  ]
+
+}

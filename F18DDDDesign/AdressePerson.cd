@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Bemærk navigations-pillene på de forskellige associationer">
+    <Position X="9.25" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="En person skal have en folkeregisteradresse&#xD;&#xA;En person kan have flere alternative adresse&#xD;&#xA;En alternativ adresse skal typebestemmes&#xD;&#xA;">
+    <Position X="8.344" Y="4.265" Height="0.896" Width="2.895" />
+  </Comment>
+  <Class Name="F18DDDDesign.Person">
+    <Position X="3.75" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FolkeregisrerAdresse" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="F18DDDDesign.Adresse1">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Adresse1.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="PersonerPaaAlternativeAdressen" />
+      <Property Name="FRAPersoner" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="F18DDDDesign.AAPersonType">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>AA.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TilknyttetAdresse" />
+      <Property Name="TilknyttetPerson" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="8.83" />
+</ClassDiagram>
