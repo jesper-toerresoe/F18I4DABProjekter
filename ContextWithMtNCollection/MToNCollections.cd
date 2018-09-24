@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ContextWithCollectionMtN.ItemX">
+    <Position X="3.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAQAAAgAAAAAAAAIIAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>ItemX.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="MyYs" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ContextWithCollectionMtN.ItemY">
+    <Position X="10" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAIAAAAAEAAAAAAIIAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>ItemY.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="MyXs" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ContextWithCollectionMtN.ItemContext">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>ItemContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="XCollection" />
+      <Property Name="YCollection" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="8.83" />
+</ClassDiagram>
